@@ -14,9 +14,8 @@ pipeline {
                 steps {
                     bat '''
                         echo '------------Install dependencies--------------'
-
-                        npm install
                     '''
+                    //npm install
                 }
             }
 
@@ -24,7 +23,7 @@ pipeline {
                 steps {
                     bat '''
                         echo '------------Execute test--------------'
-                        npm run test-chrome  
+                        npm run test 
                     '''
                     //./node_modules/.bin/cucumber-js.cmd --format json:./reports/report.json 
                     //npm run test-chrome
