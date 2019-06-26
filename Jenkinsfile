@@ -6,7 +6,7 @@ pipeline {
         stages {  
             stage('Clonning Git') {
                 steps {
-                    git 'https://github.com/ivan-molina/TFM_CUCUMBER.git'
+                    git 'https://github.com/ivan-molina/TFM2.git'
                 }
             }
             
@@ -14,6 +14,7 @@ pipeline {
                 steps {
                     bat '''
                         echo '------------Install dependencies--------------'
+
                         npm install
                     '''
                 }
