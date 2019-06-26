@@ -23,8 +23,9 @@ pipeline {
                 steps {
                     bat '''
                         echo '------------Execute test--------------'
-                        ./node_modules/.bin/cucumber-js.cmd --format json:./reports/report.json   
+                        npm run test-chrome  
                     '''
+                    //./node_modules/.bin/cucumber-js.cmd --format json:./reports/report.json 
                     //npm run test-chrome
                 }
             }
